@@ -43,3 +43,11 @@
     position: relative;
     z-index: 1;
 }
+
+/* Featured Destinations Section */
+.card {
+    height: 600px;
+}
+.card img {
+    height: 400px;
+}
