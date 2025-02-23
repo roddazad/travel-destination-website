@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand fw-bold"><i class="bi bi-luggage"></i> TravelGo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" ><i class="bi bi-list"></i></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item"><a href="#" class="navbar-link active">Home</a></li>
+                    <li class="navbar-item"><a href="#destinations" class="navbar-link">Destination</a></li>
+                    <li class="navbar-item"><a href="#packages" class="navbar-link">Packages</a></li>
+                    <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
+                    <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
+                </ul>
+                <a href="#" class="btn btn-book ms-3">Book Now</a>
+            </div>
+        </div>
+     </nav>
+     <!-- Hero Section -->
+<header class="hero-section d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+        <h1 class="display-4 text-white fw-bold">Explore the World with Ease</h1>
+        <p class="text-white lead">Discover breathtaking destinations and unforgettable experiences.</p>
+        <a href="./destination.html" class="btn btn-primary btn-lg mt-3">Explore Now</a>
+    </div>
+</header>
+<!-- Featured Destinations Section -->
+<section class="container my-5">
+    <h2 class="text-center fw-bold mb-4">Top Travel Destinations</h2>
+    <div class="row g-4">
+        <!-- Destination 1 -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="./Assets/paris.jpg" class="card-img-top" alt="Paris">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Paris, France</h5>
+                    <p class="card-text">Experience the magic of the Eiffel Tower and charming streets.</p>
+                    <a href="./destination.html" class="btn btn-primary">View More</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Destination 2 -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="./Assets/bali.jpg" class="card-img-top" alt="Bali">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Bali, Indonesia</h5>
+                    <p class="card-text">Relax on stunning beaches and explore tropical landscapes.</p>
+                    <a href="./destination.html" class="btn btn-primary">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destination 3 -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="./Assets/newYork.jpg" class="card-img-top" alt="New York">
+                <div class="card-body text-center">
+                    <h5 class="card-title">New York, USA</h5>
+                    <p class="card-text">Discover the city that never sleeps with iconic landmarks.</p>
+                    <a href="./destination.html" class="btn btn-primary">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Discover More Button -->
+    <div class="text-center mt-4">
+        <a href="destination.html" class="btn btn-outline-primary btn-lg">Discover More Destinations</a>
+    </div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
