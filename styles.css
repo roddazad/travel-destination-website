@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(230, 230, 219);
+}
+
 /* Navbar */
 .navbar-nav .navbar-link {
     font-weight: 500;
@@ -70,4 +74,64 @@
 .hero-destination .container {
     position: relative;
     z-index: 1;
+}
+
+/* Custom CSS for Arrows Inside the Carousel */
+.carousel-control-prev, 
+.carousel-control-next {
+    width: 10%; /* Make sure the buttons stay within the carousel width */
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly visible background */
+    border-radius: 50%;
+    padding: 15px; /* Increases click area */
+}
+
+.carousel-control-prev {
+    left: 7%; /* Keeps it inside */
+}
+
+.carousel-control-next {
+    right: 7%; /* Keeps it inside */
+}
+
+@media (max-width: 768px) {
+    .carousel-control-prev, 
+    .carousel-control-next {
+        width: 15%; 
+    }
+}
+
+/* Testimonials */
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.rounded-circle {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%;
+    border: 3px solid #007bff; 
+    display: block;
+    margin: 0 auto; 
+    aspect-ratio: 1 / 1; 
+}  
+
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
 }
