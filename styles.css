@@ -154,7 +154,7 @@ body {
     position: relative;
     z-index: 1;
   }
-  
+
   /* About.html */
   .hero-about {
     height: 60vh;
@@ -174,3 +174,77 @@ body {
     position: relative;
     z-index: 1;
   }
+
+  /* Hero Section Animation */
+.animated-fade {
+    animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Contact Page Hero Section */
+.hero-contact {
+    height: 60vh;
+    background: url(./Assets/contact-hero.jpg) center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero-contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hero-contact .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Contact Form Styling */
+.stylish-card {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    background: white;
+    padding: 20px;
+}
+.stylish-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-floating label {
+    transition: all 0.3s ease-in-out;
+}
+.form-floating input:focus ~ label,
+.form-floating textarea:focus ~ label {
+    color: #007bff;
+    transform: translateY(-10px);
+    font-size: 14px;
+}
+
+/* Button Enhancements */
+.btn-glow {
+    transition: all 0.3s ease-in-out;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+.btn-glow:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.7);
+}
+
+/* Contact Info Section */
+.card p i {
+    color: #007bff;
+    font-size: 1.2rem;
+}
