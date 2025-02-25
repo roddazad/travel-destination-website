@@ -18,9 +18,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top"
-    >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
       <div class="container">
         <a href="index.html" class="navbar-brand fw-bold"
           ><i class="bi bi-luggage"></i> TravelGo</a
@@ -51,274 +49,361 @@
               <a href="#about" class="navbar-link">About</a>
             </li>
             <li class="navbar-item">
-              <a href="#contact" class="navbar-link">Contact</a>
+              <a href="contact.html" class="navbar-link">Contact</a>
             </li>
           </ul>
-          <a href="#bookingForm" class="btn btn-book ms-3">Book Now</a>
         </div>
       </div>
     </nav>
     <!-- Destination Hero -->
     <header class="hero-destination d-flex align-items-center justify-content-center text-center">
-        <div class="container">
-            <h1 class="display-4 text-white fw-bold">Discover More Destinations</h1>
-            <p class="text-white lead">Choose the escape that matches you the best</p>
-            <a href="#destinations" class="btn btn-primary btn-lg mt-3">Explore Now</a>
-        </div>
+      <div class="container">
+        <h1 class="display-4 text-white fw-bold">Discover More Destinations</h1>
+        <p class="text-white lead">Choose the escape that matches you the best</p>
+        <a href="#destinations" class="btn btn-primary btn-lg mt-3">Explore Now</a>
+      </div>
     </header>
     <!-- Destinations Section -->
     <section id="destinations" class="container my-5">
-      <h2 class="text-center fw-bold mb-4">Oasis at yoour fingertips</h2>
+      <h2 class="text-center fw-bold mb-4">Oasis at your fingertips</h2>
       <div class="row g-4">
         <!-- Destination 1 -->
         <div class="col-md-4">
           <div class="card shadow-sm">
-            <img
-              src="./Assets/santorini.jpg"
-              class="card-img-top"
-              alt="Santorini"
-            />
+            <img src="./Assets/santorini.jpg" class="card-img-top" alt="Santorini" />
             <div class="card-body text-center">
               <h5 class="card-title">Santorini, Greece</h5>
               <p class="card-text">
-                Experience the stunning sunsets and breathtaking landscapes of
-                Santorini.
+                Experience the stunning sunsets and breathtaking landscapes of Santorini.
               </p>
-              <a href="#" class="btn btn-success">Book Now</a>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#destinationBookingModal"
+                data-destination="Santorini, Greece"
+              >
+                Book Now
+              </button>
             </div>
           </div>
         </div>
-
         <!-- Destination 2 -->
         <div class="col-md-4">
           <div class="card shadow-sm">
-            <img
-              src="./Assets/kyoto.jpg"
-              class="card-img-top"
-              alt="Kyoto"
-            />
+            <img src="./Assets/kyoto.jpg" class="card-img-top" alt="Kyoto" />
             <div class="card-body text-center">
               <h5 class="card-title">Kyoto, Japan</h5>
               <p class="card-text">
                 Explore ancient temples and beautiful cherry blossoms in Kyoto.
               </p>
-              <a href="#" class="btn btn-success">Book Now</a>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#destinationBookingModal"
+                data-destination="Kyoto, Japan"
+              >
+                Book Now
+              </button>
             </div>
           </div>
         </div>
-
         <!-- Destination 3 -->
         <div class="col-md-4">
           <div class="card shadow-sm">
-            <img
-              src="./Assets/capeTown.jpg"
-              class="card-img-top"
-              alt="Cape Town"
-            />
+            <img src="./Assets/capeTown.jpg" class="card-img-top" alt="Cape Town" />
             <div class="card-body text-center">
               <h5 class="card-title">Cape Town, South Africa</h5>
               <p class="card-text">
                 Enjoy picturesque beaches and stunning mountain views.
               </p>
-              <a href="#" class="btn btn-success">Book Now</a>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#destinationBookingModal"
+                data-destination="Cape Town, South Africa"
+              >
+                Book Now
+              </button>
             </div>
           </div>
         </div>
         <!-- Destination 4 -->
         <div class="col-md-4">
           <div class="card shadow-sm">
-            <img
-              src="./Assets/isfahan.jpg"
-              class="card-img-top"
-              alt="Santorini"
-            />
+            <img src="./Assets/isfahan.jpg" class="card-img-top" alt="Isfahan, Iran" />
             <div class="card-body text-center">
               <h5 class="card-title">Isfahan, Iran</h5>
               <p class="card-text">
-                Discover the stunning Persian architecture, historic bridges, and vibrant bazaars of Isfahan, the jewel of Iran.
+                Discover the stunning Persian architecture, historic bridges, and vibrant bazaars of Isfahan.
               </p>
-              <a href="#" class="btn btn-success">Book Now</a>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#destinationBookingModal"
+                data-destination="Isfahan, Iran"
+              >
+                Book Now
+              </button>
             </div>
           </div>
         </div>
-
         <!-- Destination 5 -->
         <div class="col-md-4">
           <div class="card shadow-sm">
-            <img
-              src="./Assets/tajMahal.jpg"
-              class="card-img-top"
-              alt="Kyoto"
-            />
+            <img src="./Assets/tajMahal.jpg" class="card-img-top" alt="Taj Mahal, India" />
             <div class="card-body text-center">
               <h5 class="card-title">Taj Mahal, India</h5>
               <p class="card-text">
-                Marvel at the breathtaking beauty of the Taj Mahal, a timeless symbol of love and an architectural masterpiece in India.
+                Marvel at the breathtaking beauty of the Taj Mahal.
               </p>
-              <a href="#" class="btn btn-success">Book Now</a>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#destinationBookingModal"
+                data-destination="Taj Mahal, India"
+              >
+                Book Now
+              </button>
             </div>
           </div>
         </div>
-
         <!-- Destination 6 -->
         <div class="col-md-4">
           <div class="card shadow-sm">
-            <img
-              src="./Assets/cabo.jpg"
-              class="card-img-top"
-              alt="Cape Town"
-            />
+            <img src="./Assets/cabo.jpg" class="card-img-top" alt="Los Cabos, Mexico" />
             <div class="card-body text-center">
               <h5 class="card-title">Los Cabos, Mexico</h5>
               <p class="card-text">
-                Relax on the pristine beaches of Los Cabos, Mexico, where the desert meets the sea, offering stunning landscapes and vibrant nightlife.
+                Relax on pristine beaches where desert meets the sea.
               </p>
-              <a href="#" class="btn btn-success">Book Now</a>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#destinationBookingModal"
+                data-destination="Los Cabos, Mexico"
+              >
+                Book Now
+              </button>
             </div>
           </div>
         </div>
         <!-- Destination 7 -->
         <div class="col-md-4">
           <div class="card shadow-sm">
-            <img
-              src="./Assets/dubai.jpg"
-              class="card-img-top"
-              alt="Santorini"
-            />
+            <img src="./Assets/dubai.jpg" class="card-img-top" alt="Dubai, Emirates" />
             <div class="card-body text-center">
               <h5 class="card-title">Dubai, Emirates</h5>
               <p class="card-text">
-                Experience the futuristic skyline, luxurious shopping, and thrilling desert adventures in the dazzling city of Dubai.
+                Experience a futuristic skyline and thrilling desert adventures.
               </p>
-              <a href="#" class="btn btn-success">Book Now</a>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#destinationBookingModal"
+                data-destination="Dubai, Emirates"
+              >
+                Book Now
+              </button>
             </div>
           </div>
         </div>
-
         <!-- Destination 8 -->
         <div class="col-md-4">
           <div class="card shadow-sm">
-            <img
-              src="./Assets/bankock.jpg"
-              class="card-img-top"
-              alt="Kyoto"
-            />
+            <img src="./Assets/bankock.jpg" class="card-img-top" alt="Bankok, Thailand" />
             <div class="card-body text-center">
               <h5 class="card-title">Bankok, Thailand</h5>
               <p class="card-text">
-                Immerse yourself in the vibrant street life, golden temples, and delicious cuisine of Bangkok, the heart of Thailand.
+                Immerse yourself in vibrant street life and golden temples.
               </p>
-              <a href="#" class="btn btn-success">Book Now</a>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#destinationBookingModal"
+                data-destination="Bankok, Thailand"
+              >
+                Book Now
+              </button>
             </div>
           </div>
         </div>
-
         <!-- Destination 9 -->
         <div class="col-md-4">
           <div class="card shadow-sm">
-            <img
-              src="./Assets/venice.jpg"
-              class="card-img-top"
-              alt="Cape Town"
-            />
+            <img src="./Assets/venice.jpg" class="card-img-top" alt="Venice, Italy" />
             <div class="card-body text-center">
               <h5 class="card-title">Venice, Italy</h5>
               <p class="card-text">
-                Glide through the romantic canals of Venice, Italy, and explore its historic architecture, charming bridges, and rich cultural heritage.
+                Glide through romantic canals and explore historic architecture.
               </p>
-              <a href="#" class="btn btn-success">Book Now</a>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#destinationBookingModal"
+                data-destination="Venice, Italy"
+              >
+                Book Now
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-<section class="container my-5">
-  <h2 class="text-center fw-bold mb-4">Get in Touch</h2>
-  <p class="text-center text-muted mb-4">Have questions or need assistance? Send us a message, and we'll get back to you shortly.</p>
-
-  <div class="row justify-content-center">
-      <div class="col-md-8">
-          <div class="card shadow-sm p-4">
-              <form>
-                  <!-- Name -->
-                  <div class="mb-3">
-                      <label for="name" class="form-label">Full Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                  </div>
-
-                  <!-- Email -->
-                  <div class="mb-3">
-                      <label for="email" class="form-label">Email Address</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                  </div>
-
-                  <!-- Subject -->
-                  <div class="mb-3">
-                      <label for="subject" class="form-label">Subject</label>
-                      <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
-                  </div>
-
-                  <!-- Message -->
-                  <div class="mb-3">
-                      <label for="message" class="form-label">Message</label>
-                      <textarea class="form-control" id="message" rows="4" placeholder="Type your message here..." required></textarea>
-                  </div>
-
-                  <!-- Submit Button -->
-                  <div class="text-center">
-                      <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
-                  </div>
-              </form>
+    <!-- Destination Booking Modal -->
+    <div
+      class="modal fade"
+      id="destinationBookingModal"
+      tabindex="-1"
+      aria-labelledby="destinationBookingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="destinationBookingModalLabel">Book Your Destination Inquiry</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
+          <div class="modal-body">
+            <form id="destinationBookingForm">
+              <!-- Destination (auto-filled) -->
+              <div class="mb-3">
+                <label for="destinationField" class="form-label">Destination</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="destinationField"
+                  readonly
+                />
+              </div>
+              <!-- Full Name -->
+              <div class="mb-3">
+                <label for="nameField" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nameField"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <!-- Email Address -->
+              <div class="mb-3">
+                <label for="emailField" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailField"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <!-- Phone Number -->
+              <div class="mb-3">
+                <label for="phoneField" class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phoneField"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+              <!-- Preferred Travel Date -->
+              <div class="mb-3">
+                <label for="travelDateField" class="form-label">Preferred Travel Date</label>
+                <input type="date" class="form-control" id="travelDateField" required />
+              </div>
+              <!-- Number of Travelers -->
+              <div class="mb-3">
+                <label for="travelersField" class="form-label">Number of Travelers</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="travelersField"
+                  placeholder="Enter number of travelers"
+                  min="1"
+                  required
+                />
+              </div>
+              <!-- Additional Comments -->
+              <div class="mb-3">
+                <label for="commentsField" class="form-label">Additional Comments (Optional)</label>
+                <textarea class="form-control" id="commentsField" rows="3" placeholder="Any additional information"></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-success btn-lg">Submit Inquiry</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-  </div>
-</section>
+    </div>
 
-<!-- Footer Section -->
-<footer class="bg-dark text-white py-4 mt-5">
-  <div class="container">
-      <div class="row text-center text-md-start">
-          
-          <!-- About Us -->
+    <!-- Footer Section (unchanged) -->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row text-center text-md-start">
           <div class="col-md-4">
-              <h5 class="fw-bold">TravelGo</h5>
-              <p class="small">Your trusted travel agency for unforgettable experiences. Explore the world with ease!</p>
+            <h5 class="fw-bold">TravelGo</h5>
+            <p class="small">
+              Your trusted travel agency for unforgettable experiences. Explore the world with ease!
+            </p>
           </div>
-
-          <!-- Quick Links -->
           <div class="col-md-4">
-              <h5 class="fw-bold">Quick Links</h5>
-              <ul class="list-unstyled">
-                  <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-                  <li><a href="#" class="text-white text-decoration-none">Destinations</a></li>
-                  <li><a href="#" class="text-white text-decoration-none">Packages</a></li>
-                  <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
-              </ul>
+            <h5 class="fw-bold">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Destinations</a></li>
+              <li><a href="packages.html" class="text-white text-decoration-none">Packages</a></li>
+              <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
           </div>
-
-          <!-- Social Media Links -->
           <div class="col-md-4">
-              <h5 class="fw-bold">Follow Us</h5>
-              <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+            <h5 class="fw-bold">Follow Us</h5>
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
           </div>
-      </div>
-
-      <!-- Copyright -->
-      <div class="text-center mt-4">
+        </div>
+        <div class="text-center mt-4">
           <p class="small mb-0">&copy; 2025 TravelGo. All Rights Reserved.</p>
+        </div>
       </div>
-  </div>
-</footer>
-
+    </footer>
+    <!-- Bootstrap JS Bundle -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- Inline JavaScript to Pre-Populate the Destination Field -->
+    <script>
+      const destinationBookingModal = document.getElementById('destinationBookingModal');
+      destinationBookingModal.addEventListener('show.bs.modal', event => {
+        // Button that triggered the modal
+        const button = event.relatedTarget;
+        // Extract destination from data-destination attribute
+        const destination = button.getAttribute('data-destination');
+        // Update the modal's destination field
+        const destinationField = destinationBookingModal.querySelector('#destinationField');
+        destinationField.value = destination;
+      });
+    </script>
   </body>
 </html>

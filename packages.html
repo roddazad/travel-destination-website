@@ -1,40 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Book Your Travel Package</title>
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-          crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="./styles.css" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        />
-      </head>
-<body>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your Travel Package</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top"
-    >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
       <div class="container">
-        <a href="index.html" class="navbar-brand fw-bold"
-          ><i class="bi bi-luggage"></i> TravelGo</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle Navigation"
-        >
+        <a href="index.html" class="navbar-brand fw-bold">
+          <i class="bi bi-luggage"></i> TravelGo
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
           <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -52,145 +41,264 @@
               <a href="#about" class="navbar-link">About</a>
             </li>
             <li class="navbar-item">
-              <a href="#contact" class="navbar-link">Contact</a>
+              <a href="contact.html" class="navbar-link">Contact</a>
             </li>
           </ul>
-          <a href="#bookingForm" class="btn btn-book ms-3">Book Now</a>
         </div>
       </div>
     </nav>
-        <!-- Package Grid Section -->
-    <section class="container my-5">
-        <h2 class="text-center fw-bold mb-4">Choose Your Travel Package</h2>
-        <div class="row g-4">
-            <!-- Packages (Total: 12) -->
-            <div class="col-md-4"><a href="#bookingForm" class="text-decoration-none"><div class="card shadow-sm"><img src="./Assets/package/maldives.jpg" class="card-img-top" alt="Maldives"><div class="card-body text-center"><h5 class="card-title">Maldives Getaway</h5><p class="text-muted">5 Days, 4 Nights - All Inclusive</p></div></div></a></div>
-            <div class="col-md-4"><a href="#bookingForm" class="text-decoration-none"><div class="card shadow-sm"><img src="./Assets/package/paris.jpg" class="card-img-top" alt="Paris"><div class="card-body text-center"><h5 class="card-title">Paris Escape</h5><p class="text-muted">7 Days, 6 Nights - City Tour</p></div></div></a></div>
-            <div class="col-md-4"><a href="#bookingForm" class="text-decoration-none"><div class="card shadow-sm"><img src="./Assets/package/swiss.jpg" class="card-img-top" alt="Switzerland"><div class="card-body text-center"><h5 class="card-title">Swiss Alps Retreat</h5><p class="text-muted">6 Days, 5 Nights - Luxury Stay</p></div></div></a></div>
-            <div class="col-md-4"><a href="#bookingForm" class="text-decoration-none"><div class="card shadow-sm"><img src="./Assets/package/bali.jpg" class="card-img-top" alt="Bali"><div class="card-body text-center"><h5 class="card-title">Bali Beach Vacation</h5><p class="text-muted">5 Days, 4 Nights - Tropical Escape</p></div></div></a></div>
-            <div class="col-md-4"><a href="#bookingForm" class="text-decoration-none"><div class="card shadow-sm"><img src="./Assets/package/newYork.jpg" class="card-img-top" alt="New York"><div class="card-body text-center"><h5 class="card-title">New York City Tour</h5><p class="text-muted">4 Days, 3 Nights - City Adventure</p></div></div></a></div>
-            <div class="col-md-4"><a href="#bookingForm" class="text-decoration-none"><div class="card shadow-sm"><img src="./Assets/package/tokyo.jpg" class="card-img-top" alt="Tokyo"><div class="card-body text-center"><h5 class="card-title">Tokyo Adventure</h5><p class="text-muted">7 Days, 6 Nights - Cultural Tour</p></div></div></a></div>
-            <div class="col-md-4"><a href="#bookingForm" class="text-decoration-none"><div class="card shadow-sm"><img src="./Assets/package/rome.jpg" class="card-img-top" alt="Rome"><div class="card-body text-center"><h5 class="card-title">Rome Cultural Tour</h5><p class="text-muted">6 Days, 5 Nights - Historical Journey</p></div></div></a></div>
-            <div class="col-md-4"><a href="#bookingForm" class="text-decoration-none"><div class="card shadow-sm"><img src="./Assets/package/dubai.jpg" class="card-img-top" alt="Dubai"><div class="card-body text-center"><h5 class="card-title">Dubai Luxury Escape</h5><p class="text-muted">5 Days, 4 Nights - High-End Experience</p></div></div></a></div>
-            <div class="col-md-4"><a href="#bookingForm" class="text-decoration-none"><div class="card shadow-sm"><img src="./Assets/package/santorini.jpg" class="card-img-top" alt="Santorini"><div class="card-body text-center"><h5 class="card-title">Santorini Sunset Retreat</h5><p class="text-muted">6 Days, 5 Nights - Romantic Getaway</p></div></div></a></div>
-            <div class="col-md-4"><a href="#bookingForm" class="text-decoration-none"><div class="card shadow-sm"><img src="./Assets/package/sydney.jpg" class="card-img-top" alt="Sydney"><div class="card-body text-center"><h5 class="card-title">Sydney Harbour Experience</h5><p class="text-muted">5 Days, 4 Nights - City & Beach</p></div></div></a></div>
-            <div class="col-md-4"><a href="#bookingForm" class="text-decoration-none"><div class="card shadow-sm"><img src="./Assets/package/grandCanyon.jpg" class="card-img-top" alt="Grand Canyon"><div class="card-body text-center"><h5 class="card-title">Grand Canyon Expedition</h5><p class="text-muted">4 Days, 3 Nights - Adventure Trek</p></div></div></a></div>
-            <div class="col-md-4"><a href="#bookingForm" class="text-decoration-none"><div class="card shadow-sm"><img src="./Assets/package/capeTown.jpg" class="card-img-top" alt="Cape Town"><div class="card-body text-center"><h5 class="card-title">Cape Town Safari</h5><p class="text-muted">6 Days, 5 Nights - Wildlife Experience</p></div></div></a></div>
-        </div>
-    </section>
-    
-        <!-- Booking Form Section -->
-        <section class="container my-5">
-            <h2 class="text-center fw-bold mb-4">Book Your Travel Package</h2>
-            <p class="text-center text-muted">Fill out the form below to reserve your dream vacation.</p>
-            
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="card shadow-sm p-4">
-                        <form id="bookingForm">
-                            <!-- Name -->
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                            </div>
-    
-                            <!-- Email -->
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                            </div>
-    
-                            <!-- Package Selection -->
-                            <div class="mb-3">
-                                <label for="package" class="form-label">Select Package</label>
-                                <select class="form-select" id="package" required>
-                                    <option value="" selected disabled>Choose a package</option>
-                                    <option value="Maldives Getaway">Maldives Getaway</option>
-                                    <option value="Paris Escape">Paris Escape</option>
-                                    <option value="Swiss Alps Retreat">Swiss Alps Retreat</option>
-                                    <option value="Bali Beach Vacation">Bali Beach Vacation</option>
-                                    <option value="New York City Tour">New York City Tour</option>
-                                    <option value="Tokyo Adventure">Tokyo Adventure</option>
-                                    <option value="Rome Cultural Tour">Rome Cultural Tour</option>
-                                    <option value="Dubai Luxury Escape">Dubai Luxury Escape</option>
-                                    <option value="Santorini Sunset Retreat">Santorini Sunset Retreat</option>
-                                    <option value="Sydney Harbour Experience">Sydney Harbour Experience</option>
-                                    <option value="Grand Canyon Expedition">Grand Canyon Expedition</option>
-                                    <option value="Cape Town Safari">Cape Town Safari</option>
-                                </select>
-                            </div>
-    
-                            <!-- Travel Date -->
-                            <div class="mb-3">
-                                <label for="date" class="form-label">Preferred Travel Date</label>
-                                <input type="date" class="form-control" id="date" required>
-                            </div>
-    
-                            <!-- Number of Travelers -->
-                            <div class="mb-3">
-                                <label for="travelers" class="form-label">Number of Travelers</label>
-                                <input type="number" class="form-control" id="travelers" placeholder="Enter number of travelers" min="1" required>
-                            </div>
-    
-                            <!-- Special Requests -->
-                            <div class="mb-3">
-                                <label for="requests" class="form-label">Special Requests (Optional)</label>
-                                <textarea class="form-control" id="requests" rows="3" placeholder="Any special requests?"></textarea>
-                            </div>
-    
-                            <!-- Submit Button -->
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-success btn-lg">Submit Booking</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Footer Section -->
-<footer class="bg-dark text-white py-4 mt-5">
-    <div class="container">
-        <div class="row text-center text-md-start">
-            
-            <!-- About Us -->
-            <div class="col-md-4">
-                <h5 class="fw-bold">TravelGo</h5>
-                <p class="small">Your trusted travel agency for unforgettable experiences. Explore the world with ease!</p>
+    <!-- Package Grid Section -->
+    <section class="container my-5" style="padding-top: 100px;">
+      <h2 class="text-center fw-bold mb-4">Choose Your Travel Package</h2>
+      <div class="row g-4">
+        <!-- Package Card 1 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="./Assets/package/maldives.jpg" class="card-img-top" alt="Maldives">
+            <div class="card-body text-center">
+              <h5 class="card-title">Maldives Getaway</h5>
+              <p class="text-muted">5 Days, 4 Nights - All Inclusive</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book Now
+              </button>
             </div>
-  
-            <!-- Quick Links -->
-            <div class="col-md-4">
-                <h5 class="fw-bold">Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-                    <li><a href="#" class="text-white text-decoration-none">Destinations</a></li>
-                    <li><a href="#" class="text-white text-decoration-none">Packages</a></li>
-                    <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
-                </ul>
-            </div>
-  
-            <!-- Social Media Links -->
-            <div class="col-md-4">
-                <h5 class="fw-bold">Follow Us</h5>
-                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
-            </div>
+          </div>
         </div>
-  
-        <!-- Copyright -->
-        <div class="text-center mt-4">
-            <p class="small mb-0">&copy; 2025 TravelGo. All Rights Reserved.</p>
+        <!-- Package Card 2 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="./Assets/package/paris.jpg" class="card-img-top" alt="Paris">
+            <div class="card-body text-center">
+              <h5 class="card-title">Paris Escape</h5>
+              <p class="text-muted">7 Days, 6 Nights - City Tour</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book Now
+              </button>
+            </div>
+          </div>
         </div>
+        <!-- Package Card 3 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="./Assets/package/swiss.jpg" class="card-img-top" alt="Switzerland">
+            <div class="card-body text-center">
+              <h5 class="card-title">Swiss Alps Retreat</h5>
+              <p class="text-muted">6 Days, 5 Nights - Luxury Stay</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Package Card 4 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="./Assets/package/bali.jpg" class="card-img-top" alt="Bali">
+            <div class="card-body text-center">
+              <h5 class="card-title">Bali Beach Vacation</h5>
+              <p class="text-muted">5 Days, 4 Nights - Tropical Escape</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Package Card 5 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="./Assets/package/newYork.jpg" class="card-img-top" alt="New York">
+            <div class="card-body text-center">
+              <h5 class="card-title">New York City Tour</h5>
+              <p class="text-muted">4 Days, 3 Nights - City Adventure</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Package Card 6 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="./Assets/package/tokyo.jpg" class="card-img-top" alt="Tokyo">
+            <div class="card-body text-center">
+              <h5 class="card-title">Tokyo Adventure</h5>
+              <p class="text-muted">7 Days, 6 Nights - Cultural Tour</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Package Card 7 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="./Assets/package/rome.jpg" class="card-img-top" alt="Rome">
+            <div class="card-body text-center">
+              <h5 class="card-title">Rome Cultural Tour</h5>
+              <p class="text-muted">6 Days, 5 Nights - Historical Journey</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Package Card 8 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="./Assets/package/dubai.jpg" class="card-img-top" alt="Dubai">
+            <div class="card-body text-center">
+              <h5 class="card-title">Dubai Luxury Escape</h5>
+              <p class="text-muted">5 Days, 4 Nights - High-End Experience</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Package Card 9 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="./Assets/package/santorini.jpg" class="card-img-top" alt="Santorini">
+            <div class="card-body text-center">
+              <h5 class="card-title">Santorini Sunset Retreat</h5>
+              <p class="text-muted">6 Days, 5 Nights - Romantic Getaway</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Package Card 10 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="./Assets/package/sydney.jpg" class="card-img-top" alt="Sydney">
+            <div class="card-body text-center">
+              <h5 class="card-title">Sydney Harbour Experience</h5>
+              <p class="text-muted">5 Days, 4 Nights - City & Beach</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Package Card 11 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="./Assets/package/grandCanyon.jpg" class="card-img-top" alt="Grand Canyon">
+            <div class="card-body text-center">
+              <h5 class="card-title">Grand Canyon Expedition</h5>
+              <p class="text-muted">4 Days, 3 Nights - Adventure Trek</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Package Card 12 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="./Assets/package/capeTown.jpg" class="card-img-top" alt="Cape Town">
+            <div class="card-body text-center">
+              <h5 class="card-title">Cape Town Safari</h5>
+              <p class="text-muted">6 Days, 5 Nights - Wildlife Experience</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for Booking Form -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bookingModalLabel">Book Your Travel Package</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="bookingForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="package" class="form-label">Select Package</label>
+                <select class="form-select" id="package" required>
+                  <option value="" selected disabled>Choose a package</option>
+                  <option value="Maldives Getaway">Maldives Getaway</option>
+                  <option value="Paris Escape">Paris Escape</option>
+                  <option value="Swiss Alps Retreat">Swiss Alps Retreat</option>
+                  <option value="Bali Beach Vacation">Bali Beach Vacation</option>
+                  <option value="New York City Tour">New York City Tour</option>
+                  <option value="Tokyo Adventure">Tokyo Adventure</option>
+                  <option value="Rome Cultural Tour">Rome Cultural Tour</option>
+                  <option value="Dubai Luxury Escape">Dubai Luxury Escape</option>
+                  <option value="Santorini Sunset Retreat">Santorini Sunset Retreat</option>
+                  <option value="Sydney Harbour Experience">Sydney Harbour Experience</option>
+                  <option value="Grand Canyon Expedition">Grand Canyon Expedition</option>
+                  <option value="Cape Town Safari">Cape Town Safari</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="date" class="form-label">Preferred Travel Date</label>
+                <input type="date" class="form-control" id="date" required>
+              </div>
+              <div class="mb-3">
+                <label for="travelers" class="form-label">Number of Travelers</label>
+                <input type="number" class="form-control" id="travelers" placeholder="Enter number of travelers" min="1" required>
+              </div>
+              <div class="mb-3">
+                <label for="requests" class="form-label">Special Requests (Optional)</label>
+                <textarea class="form-control" id="requests" rows="3" placeholder="Any special requests?"></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-success btn-lg">Submit Booking</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
-  
-        <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"
-      ></script>    
-</body>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4">
+            <h5 class="fw-bold">TravelGo</h5>
+            <p class="small">Your trusted travel agency for unforgettable experiences. Explore the world with ease!</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="destination.html" class="text-white text-decoration-none">Destinations</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Packages</a></li>
+              <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold">Follow Us</h5>
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <p class="small mb-0">&copy; 2025 TravelGo. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>

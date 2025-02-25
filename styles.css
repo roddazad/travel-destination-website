@@ -135,3 +135,22 @@ body {
 .btn-primary:hover {
     background-color: #0056b3;
 }
+/* Additional styles for the contact page hero */
+.hero-contact {
+    height: 60vh;
+    background: url(./Assets/contact-hero.jpg) center/cover no-repeat;
+    position: relative;
+  }
+  .hero-contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .hero-contact .container {
+    position: relative;
+    z-index: 1;
+  }
