@@ -154,3 +154,23 @@ body {
     position: relative;
     z-index: 1;
   }
+  
+  /* About.html */
+  .hero-about {
+    height: 60vh;
+    background: url(./Assets/about-hero.png) center/cover no-repeat;
+    position: relative;
+  }
+  .hero-about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .hero-about .container {
+    position: relative;
+    z-index: 1;
+  }
