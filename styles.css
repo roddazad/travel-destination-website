@@ -115,6 +115,7 @@ body {
 .card {
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
+    
 }
 
 
@@ -143,6 +144,14 @@ body {
 .btn-primary:hover {
     background-color: #0056b3;
 }
+
+.test-image {
+    width: 200px;
+    height: auto;
+    border-radius: 100%;
+    
+}
+
 /* Additional styles for the contact page hero */
 .hero-contact {
     height: 60vh;
@@ -297,6 +306,11 @@ body {
         right: 1%; /* Keeps it inside */
     }
    #testemony {
+    width: 100%;
+   }
+   .test-image {
     width: 50%;
+    
+    border-radius: 100%;
    }
 }
