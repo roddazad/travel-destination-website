@@ -90,13 +90,25 @@ body {
 }
 
 .carousel-control-prev {
-    left: 7%; /* Keeps it inside */
+    left: 10%; /* Keeps it inside */
 }
 
 .carousel-control-next {
-    right: 7%; /* Keeps it inside */
+    right: 10%; /* Keeps it inside */
 }
 
+/* Make the carousel card wider */
+#travelPackagesCarousel .carousel-item .card {
+    max-width: 750px !important; /* Increase card width */
+    width: 100%; /* Adjust width dynamically */
+    margin: 0 auto;
+}
+
+#carousel {
+    width: 100%; /* Allow full width */
+    /* max-width: 100%; */
+    margin: 0 auto;
+}
 
 
 /* Testimonials */
@@ -104,6 +116,7 @@ body {
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
+
 
 .card:hover {
     transform: scale(1.05);
@@ -244,9 +257,7 @@ body {
     font-size: 1.2rem;
 }
 
-#carousel {
-    width: 50%;
-}
+
 
 /* Mobile resposiveness */
 
@@ -278,4 +289,14 @@ body {
         color: rgba(255, 255, 255, 0.7);
         margin-top: 3px;
     }
+    .carousel-control-prev {
+        left: 1%; /* Keeps it inside */
+    }
+    
+    .carousel-control-next {
+        right: 1%; /* Keeps it inside */
+    }
+   #testemony {
+    width: 50%;
+   }
 }
