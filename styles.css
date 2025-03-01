@@ -90,25 +90,34 @@ body {
 }
 
 .carousel-control-prev {
-    left: 7%; /* Keeps it inside */
+    left: 10%; /* Keeps it inside */
 }
 
 .carousel-control-next {
-    right: 7%; /* Keeps it inside */
+    right: 10%; /* Keeps it inside */
 }
 
-@media (max-width: 768px) {
-    .carousel-control-prev, 
-    .carousel-control-next {
-        width: 15%; 
-    }
+/* Make the carousel card wider */
+#travelPackagesCarousel .carousel-item .card {
+    max-width: 750px !important; /* Increase card width */
+    width: 100%; /* Adjust width dynamically */
+    margin: 0 auto;
 }
+
+#carousel {
+    width: 100%; /* Allow full width */
+    /* max-width: 100%; */
+    margin: 0 auto;
+}
+
 
 /* Testimonials */
 .card {
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
+    
 }
+
 
 .card:hover {
     transform: scale(1.05);
@@ -135,6 +144,14 @@ body {
 .btn-primary:hover {
     background-color: #0056b3;
 }
+
+.test-image {
+    width: 200px;
+    height: auto;
+    border-radius: 100%;
+    
+}
+
 /* Additional styles for the contact page hero */
 .hero-contact {
     height: 60vh;
@@ -249,6 +266,51 @@ body {
     font-size: 1.2rem;
 }
 
-#carousel {
+
+
+/* Mobile resposiveness */
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px 0;
+    }
+
+    /* Hide everything inside footer except footer-bottom */
+    .footer .footer-content {
+        display: none !important;
+    }
+
+    /* Ensure footer-bottom is visible */
+    .footer-bottom {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-size: 0.85rem;
+        text-align: center;
+        background: #121212; /* Ensure background remains */
+    }
+
+    .footer-bottom .footer-slogan {
+        display: block;
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 3px;
+    }
+    .carousel-control-prev {
+        left: 1%; /* Keeps it inside */
+    }
+    
+    .carousel-control-next {
+        right: 1%; /* Keeps it inside */
+    }
+   #testemony {
+    width: 100%;
+   }
+   .test-image {
     width: 50%;
+    
+    border-radius: 100%;
+   }
 }

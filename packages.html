@@ -23,7 +23,7 @@
         <a href="index.html" class="navbar-brand fw-bold">
           <i class="bi bi-luggage"></i> TravelGo
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
           <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -35,10 +35,10 @@
               <a href="destination.html" class="navbar-link">Destination</a>
             </li>
             <li class="navbar-item">
-              <a href="packages.html" class="navbar-link">Packages</a>
+              <a href="#" class="navbar-link">Packages</a>
             </li>
             <li class="navbar-item">
-              <a href="#about" class="navbar-link">About</a>
+              <a href="about.html" class="navbar-link">About</a>
             </li>
             <li class="navbar-item">
               <a href="contact.html" class="navbar-link">Contact</a>
@@ -268,36 +268,43 @@
       </div>
     </div>
 
-    <!-- Footer Section -->
-    <footer class="bg-dark text-white py-4 mt-5">
-      <div class="container">
-        <div class="row text-center text-md-start">
+<!-- Footer Section -->
+<footer class="bg-dark text-white py-4 mt-5 footer">
+  <div class="container footer-content">
+      <div class="row text-center text-md-start">
+          <!-- About Us -->
           <div class="col-md-4">
-            <h5 class="fw-bold">TravelGo</h5>
-            <p class="small">Your trusted travel agency for unforgettable experiences. Explore the world with ease!</p>
+              <h5 class="fw-bold">TravelGo</h5>
+              <p class="small">Your trusted travel agency for unforgettable experiences. Explore the world with ease!</p>
           </div>
+
+          <!-- Quick Links -->
           <div class="col-md-4">
-            <h5 class="fw-bold">Quick Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-              <li><a href="destination.html" class="text-white text-decoration-none">Destinations</a></li>
-              <li><a href="#" class="text-white text-decoration-none">Packages</a></li>
-              <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
-            </ul>
+              <h5 class="fw-bold">Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                  <li><a href="destination.html" class="text-white text-decoration-none">Destinations</a></li>
+                  <li><a href="packages.html" class="text-white text-decoration-none">Packages</a></li>
+                  <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+              </ul>
           </div>
+
+          <!-- Social Media Links -->
           <div class="col-md-4">
-            <h5 class="fw-bold">Follow Us</h5>
-            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+              <h5 class="fw-bold">Follow Us</h5>
+              <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
           </div>
-        </div>
-        <div class="text-center mt-4">
-          <p class="small mb-0">&copy; 2025 TravelGo. All Rights Reserved.</p>
-        </div>
       </div>
-    </footer>
+  </div>
+
+  <!-- Mobile Footer (Always Visible) -->
+  <div class="text-center mt-3 footer-bottom">
+      &copy; 2025 TravelGo. <span class="footer-slogan">Explore the World with Ease</span>
+  </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
